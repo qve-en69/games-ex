@@ -1,0 +1,6 @@
+export const NOTIFICATION_LEVEL = {
+  SUCCESS: 'SUCCESS',
+  ERROR: 'ERROR',
+  WARNING: 'WARNING',
+  INFO: 'INFO'
+}

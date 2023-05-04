@@ -1,0 +1,333 @@
+.v-data-table{
+  background: #0d1015 !important;
+  font-size: 32px;
+  color: white !important;
+  tbody td{
+    border-top: 0 solid #3c3c3c !important;
+    border-bottom: 15px solid #282a34 !important;
+  }
+
+}
+.theme--dark.v-data-table.v-data-table--fixed-header thead th {
+  background: rgba(30, 30, 30, 0);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12);
+  font-size: 20px;
+}
+
+#slide {
+  .agile__nav-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-duration: 0.3s;
+    width: 80px;
+  }
+  .agile__nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  .agile__nav-button--prev {
+    left: 0;
+  }
+  .agile__nav-button--next {
+    right: 0;
+  }
+  .agile__dots {
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  .agile__dot {
+    margin: 0 10px;
+  }
+  .agile__dot button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.3s;
+    width: 10px;
+  }
+  .agile__dot--current button, .agile__dot:hover button {
+    background-color: #fff;
+  }
+
+  .agile__list {
+    border-radius: 15px;
+  }
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+  font-weight: 300;
+  background: rgba(40, 41, 54, 0);
+  color: rgb(189 192 209 / 45%);
+}
+
+.p-datatable .p-datatable-tbody>tr {
+  background: rgb(40 41 54 / 0%);
+}
+.p-datatable.p-datatable-sm .p-datatable-tbody>tr>td {
+  padding: 1rem 1rem;
+}
+.p-datatable.p-datatable-sm .p-datatable-thead>tr>th {
+  padding: 1rem 1rem;
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.p-datepicker-touch-ui, .p-calendar .p-datepicker-touch-ui {
+  min-width: 1vh;
+}
+
+.p-form-control {
+  width: 100%;
+  height: 60px;
+  @media (max-width: 500px) {
+    height: 50px;
+  }
+}
+.p-form-control::-webkit-input-placeholder {
+  color: #90929f;
+}
+.p-form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+
+.p-button {
+  border-radius: 10px;
+  padding: .75rem 1.25rem;
+}
+.p-fluid .p-inputgroup .p-button.p-button-icon-only {
+  border-radius: 0 3px 3px 0;
+}
+.p-calendar-w-btn .p-datepicker-trigger {
+  border-radius: 0 3px 3px 0;
+  height: 44px;
+}
+.p-inputtext {
+  padding: 1.30rem;
+  font-size: 16px;
+  background-color: #383A44;
+  border-radius: 15px;
+}
+
+.p-input-password {
+  position: relative;
+  color: white;
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #383A44;
+  border: 1px solid #3e4053;
+  &:hover {
+    border-color: #b19df7;
+  }
+  transition: background-color .2s,color .2s,border-color .2s,box-shadow .2s,-webkit-box-shadow .2s;
+  @media (max-width: 500px) {
+  height: 60px;
+  }
+  padding: 0;
+  ::v-deep {
+    .p-inputtext {
+      background-color: #383A44;
+      border: 0;
+      border-radius: 20px;
+      width: 100%;
+    }
+    .p-inputtext::-webkit-input-placeholder {
+      padding-left: 10px;
+      color: #90929f;
+    }
+    .p-inputtext:focus::-webkit-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.1s ease;
+    }
+    i {
+      font-size: 1.5rem;
+      top: calc(50% - 0.25rem);
+      right: 1.3rem;
+    }
+
+  }
+}
+
+
+.lang-dropdown {
+  border-color: #434955 !important;
+  width: 74px !important;
+  text-align: center !important;
+
+  .p-dropdown {
+    width: auto !important;
+  }
+  .p-dropdown-trigger {
+    display: none !important;
+  }
+
+  .p-dropdown-label{
+    justify-content: center !important;
+    display: flex !important;
+  }
+  .p-inputtext {
+    padding: 5px;
+  }
+  .p-dropdown:not(.p-disabled):hover {
+    border-color: #b19df7;
+  }
+
+}
+.p-dropdown-items-wrapper {
+  background: #1d1e27 !important;
+}
+
+.swiper-button-disabled {
+  opacity: 0.6;
+}
+
+.p-accordion .p-accordion-content {
+  background: #1d1e24;
+}
+
+.dm-wrapper {
+  //-webkit-box-orient: vertical;
+  //display: -webkit-box; /* Safari */
+  //overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  //height: calc(100% + 1px)
+}
+.modal-body-my {
+  //-webkit-box-orient: vertical;
+  //display: -webkit-box; /* Safari */
+  //overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  //height: calc(100% + 1px)
+
+}
+.user-modal__scroll {
+  //overflow-y: scroll;
+  //-webkit-box-orient: vertical;
+  //display: -webkit-box; /* Safari */
+  //overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  //height: calc(100% + 1px)
+
+}
+
+.c-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 25, 25, 0.4);
+  transition: ease 300ms;
+  z-index: 1030;
+}
+
+.popup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+.p-fieldset .p-fieldset-legend {
+  font-size: 0.9rem;
+  width: 250px;
+  margin-left: 29px;
+  font-weight: 500;
+  @media (max-width: 700px) {
+    width: 80%;
+    margin-left: 0px;
+    margin: auto;
+  }
+}
+.cropper-view-box {
+  border-radius: 50%;
+}
+
+.noty_theme__mint.noty_bar {
+  border-radius: 10px;
+}
+
+.noty_theme__mint.noty_bar .noty_body {
+  padding: 20px;
+}
+#noty_layout__topCenter {
+  top: 2%;
+}
+
+.noty_theme__mint.noty_type__success {
+  background-color: #518341;
+  border-bottom: 1px solid #195420;
+  color: #fff;
+}
+
+.noty_theme__mint.noty_type__error {
+  background-color: #bb3a47;
+  border-bottom: 1px solid #72222a;
+  color: #fff;
+}
+.p-overlaypanel {
+  border-radius: 15px;
+}
+
+.p-message.p-message-error {
+  background: #15171e;
+}
+
+.p-divider.p-divider-horizontal:before {
+  border-top: 1px solid #3e4053;
+}
+
+.p-overlaypanel:after {
+  border-width: 8px;
+}
+.p-overlaypanel:before {
+  border-width: 10px;
+}
+.p-dropdown-items-wrapper::-webkit-scrollbar {
+  width: 1px !important;
+}
+
+.p-megamenu-root-list > .p-menuitem-active > .p-megamenu-panel {
+  bottom: 105%;
+}
+
+.p-megamenu {
+  background: #1c1f29;
+  border: 0;
+  width: 50px;
+  height: 40px;
+  padding: 0px;
+  margin-left: 25px;
+}
+
+.p-megamenu .p-megamenu-root-list>.p-menuitem>.p-menuitem-link {
+  padding: 0.75rem 1.15rem;
+}
+
+.p-megamenu .p-megamenu-root-list>.p-menuitem>.p-menuitem-link .p-menuitem-icon {
+  color: white;
+}

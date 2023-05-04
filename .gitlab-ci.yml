@@ -1,0 +1,30 @@
+include:
+  - project: d/shared-ci
+    ref: main
+    file: /build-service.yml
+  - project: d/shared-ci
+    ref: main
+    file: /deploy-service.yml
+
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - node_modules
+
+stages:
+  - builder
+  - build
+  - deploy
+
+builder:
+  image: node:lts-alpine
+  stage: builder
+  script:
+    - npm install ci
+    - npm run lint
+    - npm run test:unit
+    - npm run build
+  only:
+    - branches
